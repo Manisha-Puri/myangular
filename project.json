@@ -1,0 +1,16 @@
+{
+  "Personal_info": {
+    "name": "nishthaa",
+    "email": "manisha@gmail.com",
+    "homeTown": "ludhiana"
+  },
+  "Educational_info": {
+    "hsc": "T-s-s-m sr sec school",
+    "ssc": "asc sr sec school",
+    "college": "lovely university"
+  },
+  "Experience": {
+    "work_exp": "started working in cognizant in july,16",
+    "projects": "E-authenticator on embedded systems"
+  }
+}

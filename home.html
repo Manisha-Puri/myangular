@@ -1,0 +1,36 @@
+<html ng-app="app1">
+<head>
+  <title> home work </title>
+  <head>
+    <body  >
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+      <script src="home.js"></script>
+      <div ng-controller="newForm">
+​
+      click it: <input type="checkbox" ng-model="checked" aria-label="Toggle ngShow"><br/>
+<div>
+  Show:
+  <div class="check-element animate-hide" ng-show="checked">
+    <span class="glyphicon glyphicon-thumbs-up"></span> show up when the checkbox is checked.
+    <p> Name: {{obb.name}} </p>
+    <p> company : {{obb.company}} </p>
+    <p> designation : {{obb.designation}} </p>
+  </div>
+</div>
+<div>
+  Hide:
+  <div class="check-element animate-hide" ng-hide="checked">
+    <span class="glyphicon glyphicon-thumbs-down"></span> I hide when the checkbox is checked.
+​
+  </div>
+  </div>
+  <div ng-show="obb.myval" class="ng-hide">
+        <p>value:  {{obb.myval}} </p>
+        <p>designation:  {{obb.designation}} </p>
+    </div>
+    <p>this is the end </p>
+​
+      </div>
+    </body>
+    </html>

@@ -1,0 +1,25 @@
+<html ng-app="app2">
+<head>
+  <title> rootscope </title>
+</head>
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="video2.js"></script>
+  <div ng-controller="heroCtrl">
+    <label> Enter the hero you want to search for : </label>
+    <input type="text" ng-model="hn"/>
+    <br>
+    <button ng-click="getHeroData()"> Submit </button>
+    <br>
+    {{heroData}}
+  </div>
+
+  <div ng-controller="heroCtrl">
+    <label>hero name :</label>
+    <input type="text"ng-model="newHero" /><br>
+    <label>real name :</label>
+    <input type="text"ng-model="newReal" /><br>
+    <button ng-click="addHeroData(newReal,newHero)"> Add </button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html ng-app="app3">
+<head>
+  <title> inheritance </title>
+</head>
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="cinheritance.js"></script>
+<div ng-controller="mainCtrl as parent">
+  <p> Name: {{parent.name}} </p>
+    <p> Sound: {{parent.sound}} </p>
+    <button ng-click=parent.animalClick()> Animal Data </button>
+  </div>
+<div ng-controller="dogCtrl as dog">
+  <p> Name: {{dog.parent.name}} </p>
+    <p> Sound: {{dog.parent.sound}} </p>
+    <p> His love is : {{dog.parent.love}} </p>
+        <button ng-click=dog.parent.dogData()>new dog bark</button>
+        <input ng-model="dog.parent.bark"/><br>
+
+        <span> : New Bark : {{dog.parent.bark}}</span>
+         </div>
+
+</body>
+</html>
